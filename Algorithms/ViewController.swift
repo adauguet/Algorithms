@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Algorithms
 //
-//  Created by Claire DAUGUET on 15/01/2016.
+//  Created by Antoine DAUGUET on 15/01/2016.
 //  Copyright © 2016 Antoine DAUGUET. All rights reserved.
 //
 
