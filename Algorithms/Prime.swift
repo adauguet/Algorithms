@@ -22,6 +22,19 @@ extension Int {
         }
         return true
 	}
+	
+	// Returns all prime factors of an given integer
+	func primeFactorize() -> [Int] {
+	    if self.isPrime() {
+	        return [self]
+	    }
+	    for integer in 2...self {
+            if self % integer == 0 {
+                return [integer] + (self/integer).primeFactorize()
+            }
+        }
+	    return []
+	}
 }
 
 // Example
