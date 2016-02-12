@@ -17,11 +17,10 @@ extension Int {
             if self % (i - 1) == 0 || self % (i + 1) == 0 { return false }
             i = i + 6
         }
-        
 		return true
 	}
 	
-	// Returns all prime factors of an given integer
+	// Returns an Array of all prime factors of an given integer
 	func primeFactorize() -> [Int] {
 		if self.isPrime() {
 			return [self]
@@ -35,7 +34,11 @@ extension Int {
 	}
 }
 
-// Example
+// Demo
 for number in 1...10000 {
-    if number.isPrime() { print(number) }
+	if number.isPrime() {
+		print(number)
+	}
 }
+
+print(792750.primeFactorize())
